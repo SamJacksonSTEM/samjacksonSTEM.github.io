@@ -1,5 +1,5 @@
-[[Rational Numbers]]
-[[Exponents]]
+[[1- Rational Numbers]]
+[[2 - Exponents]]
 Polynomials
 [Linear Relations]()
 [Linear Equations]()
