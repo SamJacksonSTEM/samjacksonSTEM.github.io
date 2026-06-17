@@ -1,3 +1,12 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+// Hide the right column entirely and let the main content stretch out
+.right {
+  display: none !important;
+}
+
+.center {
+  max-width: 100% !important;
+  width: 100% !important;
+}
