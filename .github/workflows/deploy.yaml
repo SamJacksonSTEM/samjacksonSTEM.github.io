@@ -22,6 +22,8 @@ jobs:
           node-version: 22
       - name: Install Dependencies
         run: npm ci
+      - name: Rebuild Quartz Internal Config
+        run: npx quartz sync --commit=false --push=false --pull=false
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
@@ -33,7 +35,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: stdout
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
